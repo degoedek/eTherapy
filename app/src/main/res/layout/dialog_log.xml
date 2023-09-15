@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:id="@+id/log_view">
+   <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar"-->
+
+    <ImageButton
+        android:id="@+id/btn_close_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_close"
+        android:elevation="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_close_log">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Exercise"
+                android:layout_weight="0.2"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+            <TextView
+                android:text="Date"
+                android:layout_weight="0.2"
+                android:textColor="@color/navy"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+            <TextView
+                android:text="Reps"
+                android:layout_weight="0.2"
+                android:textColor="@color/red"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+            <TextView
+                android:text="Time"
+                android:layout_weight="0.2"
+                android:textColor="@color/greendark"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+            <TextView
+                android:text="Targets\nSkipped"
+                android:layout_weight="0.2"
+                android:textColor="@color/brown"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+
+        </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/log_exercise"
+            android:text="Exercise"
+            android:layout_weight="0.2"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/log_date"
+            android:text="Date"
+            android:layout_weight="0.2"
+            android:textColor="@color/navy"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/log_reps"
+            android:text="Reps"
+            android:layout_weight="0.2"
+            android:textColor="@color/red"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/log_time"
+            android:text="Time"
+            android:layout_weight="0.2"
+            android:textColor="@color/greendark"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/log_targets_skipped"
+            android:text="Tar"
+            android:layout_weight="0.2"
+            android:textColor="@color/brown"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+
+    </TableRow>
+
+    </TableLayout>
+
+
+
+</RelativeLayout>

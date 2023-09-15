@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">New Scratch</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="introTitle">Welcome</string>
+    <string name="introDescription">Take control of your physical or occupational therapy with eTherapy- your own personalized training app that uses wireless sensors to ensure proper recovery so that you can return to being you 😀.</string>
+    <string name="tap">Tap Anywhere to Continue</string>
+
+    <string name="login">Login/Create Account</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_firstName">First Name</string>
+    <string name="prompt_lastName">Last Name</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome: "</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_etherapy_hub">MainActivity</string>
+    <string name="menu_activities">Activities</string>
+    <string name="menu_data">Me</string>
+    <string name="menu_toDoList">To-Do List</string>
+    <string name="logout">Logout</string>
+    <string name="login_chooser">Are You A Client or a Therapist?</string>
+    <string name="therapist_menu_home">Home</string>
+    <string name="therapist_menu_exercises">Exercises</string>
+    <string name="therapist_menu_patients">Patients</string>
+    <string name="title_create_exercise">Create Exercise</string>
+    <string name="switch_text_flexion_extension">Flexion/Extension</string>
+    <string name="switch_text_abduction_adduction">Abduction/Adduction</string>
+    <string name="switch_text_rotation">Internal/External Rotation</string>
+    <string name="switch_text_inversion_eversion">Inversion/Eversion</string>
+    <string name="switch_text_dorsiflexion_plantarflexion">Dorsiflexion/Plantarflexion</string>
+    <string name="switch_text_supination_pronation">Supination/Pronation</string>
+    <string name="switch_text_anterior_posterior_flexion">Anterior/Posterior Flexion</string>
+    <string name="switch_text_left_right_flexion">Left/Right Flexion</string>
+    <string name="switch_text_left_right_rotation">Left/Right Rotation</string>
+    <string name="patient_text_flex">Range of Motion for Flexion/Extension:</string>
+    <string name="patient_text_abd">Range of Motion for Abduction/Adduction:</string>
+    <string name="patient_text_rot">Range of Motion for Internal/External Rotation:</string>
+    <string name="patient_text_doriflex">Range of Motion for Dorsiflexion/Plantarflexion:</string>
+    <string name="patient_text_left_right_flexion">Range of Motion for Left/Right Flexion:</string>
+    <string name="patient_text_left_right_rotation">Range of Motion for Left/Right Rotation:</string>
+    <string name="patient_text_inversion_eversion">Range of Motion for Inversion/Eversion:</string>
+    <string name="patient_text_supination_pronation">Range of Motion for Supination/Pronation:</string>
+    <string name="patient_text_anterior_posterior_flexion">Range of Motion for Anterior/Posterior Flexion:</string>
+    <string name="done">Done</string>
+    <string name="flexion_angle_text">∠Flexion:</string>
+    <string name="extension_angle_text">∠Extension: </string>
+    <string name="abduction_angle_text">∠Abduction: </string>
+    <string name="adduction_angle_text">∠Adduction: </string>
+    <string name="internal_rotation_angle_text">∠Internal Rotation: </string>
+    <string name="external_rotation_angle_text">∠External Rotation: </string>
+    <string name="pair_title">Pair</string>
+    <string name="connect_description">Now, turn on all notches you wish to use and tap below</string>
+    <string name="pair_description">Turn on notches one at a time and tap below</string>
+    <string name="calibrate_title">Calibrate</string>
+    <string name="calibrate_description">Re-calibrate notches every 8 hours</string>
+    <string name="channel_title">Change Channel</string>
+    <string name="channel_description">There are 26 channels (A-Z).\nAll notches must be connected to the same channel</string>
+    <string name="change_channel_description">Select channel if nearby notches are causing interference</string>
+    <string name="select_exercise_title">Exercises</string>
+    <string name="select_exercise_description">Select exercise(s) and then tap "Start" to begin</string>
+    <string name="dialog_exercise_complete_description">You have successfully completed your exercise. Keep up the good work!</string>
+    <string name="dialog_exercise_complete_title">Outstanding!</string>
+    <string name="login_as_therapist">Login as Therapist</string>
+    <string name="login_as_client">Login as Client</string>
+    <string name="register_as_therapist">Register as Therapist</string>
+    <string name="create_therapist_account">Create Therapist Account</string>
+    <string name="please_enter_your_credentials_below">Please Enter Your Credentials Below</string>
+    <string name="username">Username</string>
+    <string name="id">ID</string>
+
+    <string-array name="dropdown_array">
+        <item>Client</item>
+        <item>Therapist</item>
+    </string-array>
+
+    <string-array name="xyz_array">
+        <item>Select Motion</item>
+        <item>Flexion/Extension</item>
+        <item>Abduction/Adduction</item>
+        <item>Internal/External Rotation</item>
+    </string-array>
+
+    <string-array name="joint_array">
+        <item>Select Joint for Therapy</item>
+        <item>Ankle</item>
+        <item>Cervical Spine</item>
+        <item>Elbow</item>
+        <item>Hip</item>
+        <item>Knee</item>
+        <item>Lumbar Spine</item>
+        <item>Neck</item>
+        <item>Shoulder</item>
+        <item>Wrist</item>
+    </string-array>
+
+    <string-array name="patient_joint_array">
+        <item>Select Joint for Therapy</item>
+        <item>Ankle</item>
+        <item>Cervical Spine</item>
+        <item>Elbow</item>
+        <item>Hip</item>
+        <item>Knee</item>
+        <item>Lumbar Spine</item>
+        <item>Neck</item>
+        <item>Shoulder</item>
+        <item>Wrist</item>
+    </string-array>
+
+    <string-array name="joint_location_array">
+        <item>Select Location of Joint on Patient Body</item>
+        <item>Left</item>
+        <item>Right</item>
+        <item>Both</item>
+    </string-array>
+
+    <string-array name="target_end_condition_array">
+        <item>Select Condition for Completing Exercise</item>
+        <item>Time</item>
+        <item>Repetitions</item>
+        <item>Until Stop</item>
+    </string-array>
+
+
+</resources>

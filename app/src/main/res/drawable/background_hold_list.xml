@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/background_hold_1"
+        android:duration="@integer/eachGradientHoldTime"/>
+    <item
+        android:drawable="@drawable/background_hold_2"
+        android:duration="@integer/eachGradientHoldTime"/>
+    <item
+        android:drawable="@drawable/background_hold_3"
+        android:duration="@integer/eachGradientHoldTime"/>
+</animation-list>
