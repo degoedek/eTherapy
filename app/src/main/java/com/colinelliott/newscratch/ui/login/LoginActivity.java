@@ -269,9 +269,13 @@ public class LoginActivity extends AppCompatActivity implements AdapterView.OnIt
         therapists. It receives an instance of the patient database and two edit text fields for id
         and password. It returns a boolean depending on if the id and password combo exist.
          */
-        int pass = Integer.parseInt(passwordEdit.getText().toString());
-        int id = Integer.parseInt(idEdit.getText().toString());
-
+        int pass, id;
+        try {
+            pass = Integer.parseInt(passwordEdit.getText().toString());
+            id = Integer.parseInt(idEdit.getText().toString());
+        }catch(NumberFormatException e){
+            return false;
+        }
         if(patientDb.patientDao().getAllPatientsByIDList(Integer.parseInt(idEdit.getText().toString())).size()>0)
             if(patientDb.patientDao().findUserWithIdPass(id,pass).size()>0)
                 return true;
