@@ -24,8 +24,8 @@ public class Patient {
         this.lastName = lastName;
         this.therapistID = therapistID;
         this.patientData = "";
-        Random generator = new Random(patientId+(int)lastName.charAt(0)+(int)firstName.charAt(0));
-        this.password =  generator.nextInt(1000000); //creates a random 8 digit password
+        Random generator = new Random(patientId + (int) lastName.charAt(0) + (int) firstName.charAt(0));
+        this.password = 10000000 + generator.nextInt(90000000); // generates a random 8-digit password
 
        //this.assignmentMap = new HashMap<String,ArrayList<Object>>();
         this.jointArray = jointArray;

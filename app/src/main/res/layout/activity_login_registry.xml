@@ -91,7 +91,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="24dp"
-        android:hint="@string/prompt_password"
+        android:hint="Password (Minimum 3 Characters)"
         android:imeActionLabel="@string/action_sign_in_short"
         android:imeOptions="actionDone"
         android:inputType="textPassword"

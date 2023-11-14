@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
+import android.database.sqlite.SQLiteConstraintException;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.inputmethod.EditorInfo;
@@ -11,7 +12,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.colinelliott.newscratch.NewScratchApplication;
 import com.colinelliott.newscratch.R;
 import com.colinelliott.newscratch.Therapist;
@@ -70,16 +70,19 @@ public class LoginRegistry extends AppCompatActivity {
         // TODO: Send the data to the database
         //TherapistThread thread = new TherapistThread(theraDb,username,password,firstName,lastName);
         //thread.run();
-        theraDb.therapistDao().insert(new Therapist(username,firstName,lastName,password));
-        //repository.insert(new Therapist(username,password,firstName,lastName));
+        try {
+            theraDb.therapistDao().insert(new Therapist(username, firstName, lastName, password));
+            // TODO: Print the username back as confirmation
+            Context contex = getApplicationContext();
+            Toast toast = Toast.makeText(contex, "Registered: "+ username, Toast.LENGTH_SHORT);
+            toast.show();
 
-        // TODO: Print the username back as confirmation
-        Context contex = getApplicationContext();
-        Toast toast = Toast.makeText(contex, "Registered: "+ username, Toast.LENGTH_SHORT);
-        toast.show();
+            // TODO: Route the user to the main page
+            Intent intent = new Intent(this, LogInHubActivity.class);
+            startActivity(intent);
 
-        // TODO: Route the user to the main page
-        Intent intent = new Intent(this, LogInHubActivity.class);
-        startActivity(intent);
+        }catch(SQLiteConstraintException e){
+            Toast.makeText(this.getApplicationContext(),"Invalid Username/Password", Toast.LENGTH_SHORT).show();
+        }
     }
 }
